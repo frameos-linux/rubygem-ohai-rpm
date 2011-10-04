@@ -6,12 +6,12 @@
 
 Summary: Ohai profiles your system and emits JSON
 Name: rubygem-%{gemname}
-Version: 0.6.2
+Version: 0.6.6
 Release: 1%{?dist}
 Group: Development/Languages
 License: GPLv2+ or Ruby
 URL: http://wiki.opscode.com/display/ohai
-Source0: %{gemname}-%{version}.gem
+Source0: http://rubygems.org/downloads/%{gemname}-%{version}.gem
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Requires: rubygems
 Requires: rubygem(yajl-ruby) 
@@ -54,6 +54,12 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Tue Oct 04 2011 Sergio Rubio <rubiojr@frameos.org> - 0.6.6-1
+- upstream 0.6.6
+
+* Fri Apr 29 2011 Sergio Rubio <rubiojr@frameos.org> - 0.6.4-2
+- upstream update
+
 * Fri Apr 15 2011 Sergio Rubio <rubiojr@frameos.org> - 0.6.2-1
 - bumped version
 
