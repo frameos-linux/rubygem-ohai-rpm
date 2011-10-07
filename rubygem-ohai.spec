@@ -6,7 +6,7 @@
 
 Summary: Ohai profiles your system and emits JSON
 Name: rubygem-%{gemname}
-Version: 0.6.6
+Version: 0.6.8
 Release: 1%{?dist}
 Group: Development/Languages
 License: GPLv2+ or Ruby
@@ -54,6 +54,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Fri Oct 07 2011 Sergio Rubio <rubiojr@frameos.org> - 0.6.8-1
+- upstream update
+
 * Tue Oct 04 2011 Sergio Rubio <rubiojr@frameos.org> - 0.6.6-1
 - upstream 0.6.6
 
