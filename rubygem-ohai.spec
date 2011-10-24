@@ -6,7 +6,7 @@
 
 Summary: Ohai profiles your system and emits JSON
 Name: rubygem-%{gemname}
-Version: 0.6.8
+Version: 0.6.10
 Release: 1%{?dist}
 Group: Development/Languages
 License: GPLv2+ or Ruby
@@ -15,7 +15,7 @@ Source0: http://rubygems.org/downloads/%{gemname}-%{version}.gem
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Requires: rubygems
 Requires: rubygem(yajl-ruby) 
-Requires: rubygem(systemu) >= 0
+Requires: rubygem(systemu) >= 2.2
 Requires: rubygem(mixlib-cli) >= 0
 Requires: rubygem(mixlib-config) >= 0
 Requires: rubygem(mixlib-log) >= 0
@@ -54,6 +54,10 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Mon Oct 24 2011 Sergio Rubio <rubiojr@frameos.org> - 0.6.10-1
+- Upstream update
+- Bump systemu dep to 2.2.0
+
 * Fri Oct 07 2011 Sergio Rubio <rubiojr@frameos.org> - 0.6.8-1
 - upstream update
 
